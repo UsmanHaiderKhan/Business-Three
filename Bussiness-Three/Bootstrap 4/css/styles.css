@@ -2,6 +2,7 @@
 @font-face {
     font-family: 'Raleway-Bold';
     src: url('../../Fonts/Raleway-Bold.otf') format('opentype');
+    font-weight: 700;
 }
 
 @font-face {
@@ -12,6 +13,7 @@
 @font-face {
     font-family: 'Raleway-Medium';
     src: url('../../Fonts/Raleway-Medium.otf') format('opentype');
+    font-weight: 500;
 }
 /*=================== Header Section Styling ===================*/
 html, body {
@@ -42,7 +44,7 @@ html, body {
 }
 
 .slider-pera-text {
-    font-family: 'Lato-Light';
+    font-family: 'Lato-Light',sans-serif;
     font-size: 18px;
     font-weight: bold;
     color: #212121;
@@ -193,8 +195,16 @@ html, body {
     margin-top: 115px;
 }
 
+.mt-110 {
+    margin-top: 110px;
+}
+
 .mt-108 {
     margin-top: 108px;
+}
+
+.mt-106 {
+    margin-top: 106px;
 }
 
 .mt-100 {
@@ -215,6 +225,10 @@ html, body {
 
 .mt-88 {
     margin-top: 88px;
+}
+
+.mt-84 {
+    margin-top: 84px;
 }
 
 .mt-83 {
@@ -257,6 +271,18 @@ html, body {
     margin-top: 40px;
 }
 
+.mt-38 {
+    margin-top: 38px;
+}
+
+.mt-35 {
+    margin-top: 35px;
+}
+
+.mt-34 {
+    margin-top: 34px;
+}
+
 .mt-30 {
     margin-top: 30px;
 }
@@ -291,6 +317,10 @@ html, body {
 
 .mb-160 {
     margin-bottom: 160px;
+}
+
+.pt-120 {
+    padding-top: 120px;
 }
 
 .pt-100 {
@@ -372,6 +402,33 @@ html, body {
     color: #9e9e9e;
     font-family: 'Lato', sans-serif;
 }
+
+.more-details {
+    font-family: 'Lato', sans-serif;
+    font-size: 19px;
+    color: #9e9e9e;
+    text-align: left;
+}
+
+.link-style {
+    display: block;
+    text-decoration: none;
+    color: #9e9e9e;
+}
+
+    .link-style:hover {
+        display: block;
+        text-decoration: none;
+        color: #9e9e9e;
+    }
+
+.service-bg {
+    background-image: url('../../Images/Shape copy.png');
+    background-size: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 /*================== fun Fact Section Styling ====================*/
 #fun-fact {
     background-image: url('../../Images/fun-banner.png');
@@ -401,7 +458,10 @@ html, body {
     font-weight: 400;
     text-transform: uppercase;
 }
-/*==============================*/
+/*============== Portfolio Section Styling ================*/
+#portfolio {
+    background-color: #f7f7f7;
+}
 
 .great-font {
     font-size: 41px;
@@ -420,14 +480,33 @@ html, body {
 
 .owl-carousel .owl-nav button.owl-next {
     position: absolute;
-    right: 0;
+    right: 10%;
     top: 35%;
+    outline: none;
 }
 
 .owl-carousel .owl-nav button.owl-prev {
-    left: 0;
+    left: 10%;
     position: absolute;
     top: 35%;
+    outline: none;
+}
+
+.my-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(244,244,244,0.6);
+    z-index: 2;
+    cursor: pointer;
+}
+/*======================Integration Section Styling=======================*/
+#integration {
+    background-color: #f9f9f9;
 }
 
 #contact {
@@ -445,6 +524,52 @@ html, body {
     text-transform: uppercase;
 }
 
+.form-control {
+    padding: 1.5rem 0.75rem;
+    font-family: sans-serif;
+}
+
+.btn-submit {
+    color: white;
+    background-color: #00aeef;
+    height: 60px;
+}
+
+.page-footer {
+    width: 100%;
+    height: auto;
+    background-color: #05374f;
+}
+
+.footer-font {
+    font-size: 22px;
+    padding-top: 22px;
+    font-family: 'Raleway-Medium';
+    font-weight: 300;
+    left: 20%;
+}
+
+.footer-text-color {
+    color: #929292;
+}
+
+.social {
+    text-decoration: none;
+    color: white;
+}
+
+    .social:hover {
+        text-decoration: none;
+        color: white;
+    }
+
+.icons-color {
+    color: #b9c0c6;
+}
+
+.arrow-outline {
+    outline: none;
+}
 /*================ Media Query ===============*/
 @media screen and (max-width: 768px) {
     .mainheading {
@@ -456,11 +581,111 @@ html, body {
     .mainheading {
         font-size: 30px;
     }
+
+    .mainheading {
+        font-size: 30px;
+    }
+
+    .brand-font {
+        font-size: 28px;
+    }
+
+    .bring-font {
+        font-size: 28px;
+    }
+
+    .service-font {
+        font-family: 20px !important;
+    }
+
+    .color-font {
+        font-family: 20px !important;
+    }
+
+    .fun-font {
+        font-size: 35px;
+    }
+
+    .no-font {
+        font-size: 40px
+    }
+
+    .media-mt-50 {
+        padding-top: 50px;
+    }
+
+    .great-font {
+        font-size: 25px;
+    }
+
+    .inte-font {
+        font-size: 25px;
+    }
+
+    .touch-font {
+        font-size: 30px;
+    }
+
+    .media-mt-40 {
+        margin-top: 40px;
+    }
+
+    .media-mt-30 {
+        margin-top: 30px;
+    }
 }
 
 @media screen and (max-width: 411px) {
     .mainheading {
         font-size: 30px;
+    }
+
+    .brand-font {
+        font-size: 28px;
+    }
+
+    .bring-font {
+        font-size: 28px;
+    }
+
+    .service-font {
+        font-family: 20px !important;
+    }
+
+    .color-font {
+        font-family: 20px !important;
+    }
+
+    .fun-font {
+        font-size: 35px;
+    }
+
+    .no-font {
+        font-size: 40px
+    }
+
+    .media-mt-50 {
+        padding-top: 50px;
+    }
+
+    .great-font {
+        font-size: 25px;
+    }
+
+    .inte-font {
+        font-size: 25px;
+    }
+
+    .touch-font {
+        font-size: 30px;
+    }
+
+    .media-mt-40 {
+        margin-top: 40px;
+    }
+
+    .media-mt-30 {
+        margin-top: 30px;
     }
 }
 
@@ -468,10 +693,106 @@ html, body {
     .mainheading {
         font-size: 30px;
     }
+
+    .brand-font {
+        font-size: 28px;
+    }
+
+    .bring-font {
+        font-size: 28px;
+    }
+
+    .service-font {
+        font-family: 20px !important;
+    }
+
+    .color-font {
+        font-family: 20px !important;
+    }
+
+    .fun-font {
+        font-size: 35px;
+    }
+
+    .no-font {
+        font-size: 40px
+    }
+
+    .media-mt-50 {
+        padding-top: 50px;
+    }
+
+    .great-font {
+        font-size: 25px;
+    }
+
+    .inte-font {
+        font-size: 25px;
+    }
+
+    .touch-font {
+        font-size: 30px;
+    }
+
+    .media-mt-40 {
+        margin-top: 40px;
+    }
+
+    .media-mt-30 {
+        margin-top: 30px;
+    }
 }
 
 @media screen and (max-width: 360px) {
     .mainheading {
         font-size: 30px;
+    }
+
+    .brand-font {
+        font-size: 28px;
+    }
+
+    .bring-font {
+        font-size: 28px;
+    }
+
+    .service-font {
+        font-family: 20px !important;
+    }
+
+    .color-font {
+        font-family: 20px !important;
+    }
+
+    .fun-font {
+        font-size: 35px;
+    }
+
+    .no-font {
+        font-size: 40px
+    }
+
+    .media-mt-50 {
+        padding-top: 50px;
+    }
+
+    .great-font {
+        font-size: 25px;
+    }
+
+    .inte-font {
+        font-size: 25px;
+    }
+
+    .touch-font {
+        font-size: 30px;
+    }
+
+    .media-mt-40 {
+        margin-top: 40px;
+    }
+
+    .media-mt-30 {
+        margin-top: 30px;
     }
 }
