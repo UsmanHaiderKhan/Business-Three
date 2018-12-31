@@ -11,6 +11,7 @@
     <link href="lightbox2-master/dist/css/lightbox.css" rel="stylesheet" />
     <link href="Bootstrap 4/css/owl.carousel.min.css" rel="stylesheet" />
     <link href="Bootstrap 4/css/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="Bootstrap 4/css/main.css" rel="stylesheet" />
     <link href="Bootstrap 4/css/styles.css" rel="stylesheet" />
     <title>Business-one | Theme</title>
 </head>
@@ -30,22 +31,19 @@
                             <a class="nav-link active scroll" href="#home">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link scroll" href="#about-us">ABOUT</a>
+                            <a class="nav-link scroll" href="#brand">ABOUT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link scroll" href="#how_are">WORK</a>
+                            <a class="nav-link scroll" href="#services">SERVICES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link scroll" href="#gallery">GALLERY</a>
+                            <a class="nav-link scroll" href="#portfolio">PORTFOLIO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link scroll" href="#news_blog">NEWS</a>
+                            <a class="nav-link scroll" href="#integration">CLIENTS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link scroll" href="#clients">CLIENTS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link scroll" href="#contact-us">CONTACT</a>
+                            <a class="nav-link scroll" href="#contact">CONTACT</a>
                         </li>
                     </ul>
                 </div>
@@ -62,7 +60,7 @@
                 </div>
             </div>
             <div class="text-center pb-5">
-                <img src="Images/down-arrow.png" />
+                <a href="#brand" class="arrow-outline"><img src="Images/down-arrow.png" class="animated pulse infinite" /></a>
             </div>
         </div>
     </section>
@@ -81,7 +79,7 @@
         <div class="mt-99 bg-color">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-5">
+                    <div class="col-md-5">
                         <h2 class="story-font mt-65">Our Story</h2>
                         <div class="mt-40">
                             <p class="text-right story-desc comments-space">
@@ -90,19 +88,25 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-lg-7">
-                        <img src="Images/slider/slider1.png" class="img-fluid" />
+                    <div class="col-md-7">
+                        <!--<img src="Images/slider/slider1.png" class="img-fluid" />-->
+                        <div id="wrapper_bu" class="position-relative">
+                            <div id="bu1"> <img src="Images/slider/slider1.png" alt="img-1" class="img-fluid" /> </div>
+                            <div id="bu2"> <img src="Images/slider/slider2.png" alt="img-1" class="img-fluid" /> </div>
+                            <div id="bu3"> <img src="Images/slider/slider3.png" alt="img-1" class="img-fluid" /> </div>
+                            <div id="bu4"> <img src="Images/slider/slider4.png" alt="img-1" class="img-fluid" /> </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- ===================== Services Section ===================== -->
-    <section id="services" class="mt-99">
+    <section id="services" class="">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 offset-md-2 text-center">
-                    <h2 class="bring-font"><span class="brand-font">services</span> we provide </h2>
+                    <h2 class="bring-font mt-99 media-mt-50"><span class="brand-font">services</span> we provide </h2>
                     <p class="pera-text text-center mt-40">
                         Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit,.
                     </p>
@@ -112,15 +116,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="mt-40">
+                    <div class="mt-40 ">
                         <div class="media">
-                            <img class="mr-3" src="Images/services/service1.png" alt="Generic placeholder image">
+                            <img class="mr-5  mt-3" src="Images/services/service1.png" alt="Generic placeholder image">
                             <div class="media-body">
-                                <h2 class="service-font">Quasi <span class="color-font">Architecto</span></h2>
-                                <p class="service-desc text-left mt-30">
+                                <h5 class="service-font">Quasi <span class="color-font">Architecto</span></h5>
+                                <p class="service-desc text-left mt-30 comments-spaces">
+                                    Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit
+                                    Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit
                                     Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit
                                 </p>
-                                <i class="mt-25">read more&nbsp;&nbsp; <span class="fa fa-arrow-right"></span></i>
                             </div>
                         </div>
                     </div>
@@ -128,13 +133,14 @@
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="mt-40">
                         <div class="media">
-                            <img class="mr-3" src="Images/services/service2.png" alt="Generic placeholder image">
+                            <img class="mr-5 mt-3" src="Images/services/service2.png" alt="Generic placeholder image">
                             <div class="media-body">
                                 <h2 class="service-font">Magni <span class="color-font">Dolores</span></h2>
-                                <p class="service-desc text-left mt-30">
+                                <p class="service-desc text-left mt-30 comments-spaces">
+                                    Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit
+                                    Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit
                                     Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit
                                 </p>
-                                <i class="mt-25">read more&nbsp;&nbsp; <span class="fa fa-arrow-right"></span></i>
                             </div>
                         </div>
                     </div>
@@ -142,27 +148,29 @@
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="mt-40">
                         <div class="media">
-                            <img class="mr-3" src="Images/services/service3.png" alt="Generic placeholder image">
+                            <img class="mr-5 mt-3" src="Images/services/service3.png" alt="Generic placeholder image">
                             <div class="media-body">
                                 <h2 class="service-font">Adipisci <span class="color-font">Velit</span></h2>
-                                <p class="service-desc text-left mt-30">
+                                <p class="service-desc text-left mt-30 comments-spaces">
+                                    Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit
+                                    Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit
                                     Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit
                                 </p>
-                                <i class="mt-25">read more&nbsp;&nbsp; <span class="fa fa-arrow-right"></span></i>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class=" mt-100">
+                    <div class="mt-100">
                         <div class="media">
-                            <img class="mr-3" src="Images/services/service4.png" alt="Generic placeholder image">
+                            <img class="mr-5 mt-3" src="Images/services/service4.png" alt="Generic placeholder image">
                             <div class="media-body">
                                 <h2 class="service-font">Except <span class="color-font">Sinteur</span></h2>
-                                <p class="service-desc text-left mt-30">
+                                <p class="service-desc text-left mt-30 comments-spaces">
+                                    Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit
+                                    Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit
                                     Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit
                                 </p>
-                                <i class="mt-25">read more&nbsp;&nbsp; <span class="fa fa-arrow-right"></span></i>
                             </div>
                         </div>
                     </div>
@@ -170,13 +178,14 @@
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class=" mt-100">
                         <div class="media">
-                            <img class="mr-3" src="Images/services/service5.png" alt="Generic placeholder image">
+                            <img class="mr-5 mt-3" src="Images/services/service5.png" alt="Generic placeholder image">
                             <div class="media-body">
                                 <h2 class="service-font">Tempora <span class="color-font">Incidunt</span></h2>
-                                <p class="service-desc text-left mt-30">
+                                <p class="service-desc text-left mt-30 comments-spaces">
+                                    Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit
+                                    Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit
                                     Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit
                                 </p>
-                                <i class="mt-25">read more&nbsp;&nbsp; <span class="fa fa-arrow-right"></span></i>
                             </div>
                         </div>
                     </div>
@@ -184,13 +193,15 @@
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class=" mt-100">
                         <div class="media">
-                            <img class="mr-3" src="Images/services/service6.png" alt="Generic placeholder image">
+                            <img class="mr-5 mt-3" src="Images/services/service6.png" alt="Generic placeholder image">
                             <div class="media-body">
                                 <h2 class="service-font"> Magnam<span class="color-font">Aliquam</span></h2>
-                                <p class="service-desc text-left mt-30">
+                                <p class="service-desc text-left mt-30 comments-spaces">
+                                    Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit
+                                    Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit
                                     Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit
                                 </p>
-                                <i class="mt-25">read more&nbsp;&nbsp; <span class="fa fa-arrow-right"></span></i>
+                                <!--<i class="mt-25">read more&nbsp;&nbsp; <span class="fa fa-arrow-right"></span></i>-->
                             </div>
                         </div>
                     </div>
@@ -211,62 +222,86 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-12 text-center mt-83">
                     <img src="Images/Fun/clock.png" />
-                    <h2 class="no-font mt-55">2740</h2>
+                    <h2 class="no-font mt-55 counter-value">2740</h2>
                     <h2 class="desc-font mt-15">houre of work</h2>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 text-center mt-83">
                     <img src="Images/Fun/user.png" />
-                    <h2 class="no-font mt-55">89</h2>
+                    <h2 class="no-font mt-55 counter-value">89</h2>
                     <h2 class="desc-font mt-15">satisfied client</h2>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 text-center mt-83">
                     <img src="Images/Fun/rocket.png" />
-                    <h2 class="no-font mt-55">147</h2>
+                    <h2 class="no-font mt-55 counter-value">147</h2>
                     <h2 class="desc-font mt-15">projects delivered</h2>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 text-center mt-83">
                     <img src="Images/Fun/cup.png" />
-                    <h2 class="no-font mt-55">23</h2>
+                    <h2 class="no-font mt-55 counter-value">23</h2>
                     <h2 class="desc-font mt-15">award won</h2>
                 </div>
             </div>
         </div>
         <div class="pt-100"></div>
     </section>
-    <section class="mt-83">
+    <section id="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 offset-md-2 text-center">
-                    <h2 class="bring-font">Our Amazing <span class="brand-font">portfolio</span></h2>
+                    <h2 class="bring-font mt-83">Our Amazing <span class="brand-font">portfolio</span></h2>
                 </div>
             </div>
         </div>
-        <div>
-            <img src="Images/Shape copy.png" class="w-100 h-75" />
+        <div class="container">
+            <div class="row mt-106 media-mt-40">
+                <div class="col-md-8 offset-md-3 mb-2">
+                    <!--<img src="Images/Shape copy.png" class="w-100" />-->
+                    <div>
+                        <img src="Images/portfolio/slider-11.png" class="hello img-fluid" id="img-1" />
+                    </div>
+                    <div>
+                        <img src="Images/portfolio/slider-12.png" class="hello d-none img-fluid" id="img-2" />
+                    </div>
+                    <div>
+                        <img src="Images/portfolio/slider-13.png" class="d-none hello" id="img-3" />
+                    </div>
+                    <div>
+                        <img src="Images/portfolio/slider-14.png" class="d-none hello" id="img-4" />
+                    </div>
+                    <div>
+                        <img src="Images/portfolio/slider-15.png" class="d-none hello" id="img-5" />
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="owl-carousel position-relative">
-            <div>
-                <img src="Images/portfolio/slider-11.png" />
+            <div class="item" onclick="change_banner(1)">
+                <img src="Images/portfolio/slider-11.png" class="position-relative" onclick="change_overlay(1)" />
+                <div id="overlay-1" class="my-overlay"></div>
             </div>
-            <div>
-                <img src="Images/portfolio/slider-12.png" />
+            <div class="item" onclick="change_banner(2)">
+                <img src="Images/portfolio/slider-12.png" class="position-relative" onclick="change_overlay(2)" />
+                <div id="overlay-2" class="my-overlay"></div>
             </div>
-            <div>
-                <img src="Images/portfolio/slider-13.png" />
+            <div class="item" onclick="change_banner(3)">
+                <img src="Images/portfolio/slider-13.png" class="position-relative" onclick="change_overlay(3)" />
+                <div id="overlay-3" class="my-overlay"></div>
             </div>
-            <div>
-                <img src="Images/portfolio/slider-14.png" />
+            <div class="item" onclick="change_banner(4)">
+                <img src="Images/portfolio/slider-14.png" class="position-relative" />
+                <div id="overlay-4" class="my-overlay" onclick="change_overlay(4)"></div>
             </div>
-            <div>
-                <img src="Images/portfolio/slider-15.png" />
+            <div class="item" onclick="change_banner(5)">
+                <img src="Images/portfolio/slider-15.png" class="position-relative" />
+                <div id="overlay-5" class="my-overlay" onclick="change_overlay(5)"></div>
             </div>
         </div>
     </section>
-    <section id="integration" class="mt-100">
+    <section id="integration">
         <div class="container">
             <div class="row">
                 <div class="col-md-10 offset-md-1">
-                    <h2 class="great-font text-center">Greate <span class="inte-font">Integration</span> with other</h2>
+                    <h2 class="great-font text-center mt-100">Greate <span class="inte-font">Integration</span> with other</h2>
                     <p class="text-center mt-30">
                         Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
                     </p>
@@ -290,6 +325,7 @@
                 </div>
             </div>
         </div>
+        <div class="pt-120"></div>
     </section>
     <section id="contact">
         <div class="container">
@@ -300,32 +336,54 @@
             </div>
         </div>
         <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="form-group">
-                        <input type="type" class="form-control" name="name" value="" placeholder="Name" />
+            <form action="#" method="post">
+                <div class="row mt-83">
+                    <div class="col-md-3 offset-md-3">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="name" value="" placeholder="Name" required="" />
+                        </div>
                     </div>
-
-                </div>
-                <div class="col-md-3">
-                    <div class="form-group">
-                        <input type="email" class="form-control" name="name" value="" placeholder="Email" />
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <input type="email" class="form-control" name="name" value="" placeholder="Email" required="" />
+                        </div>
                     </div>
-
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <textarea class="form-control" rows="5" placeholder="Messages"></textarea>
+                <div class="row">
+                    <div class="col-md-6 offset-md-3 mt-3 mt-38">
+                        <div class="form-group">
+                            <textarea class="form-control" rows="5" placeholder="Messages" required=""></textarea>
+                        </div>
                     </div>
-
                 </div>
-                <button type="submit" class="btn btn-submit">SUBMIT</button>
-            </div>
+                <div class="row">
+                    <div class="col-md-6 offset-md-3 mt-34">
+                        <button type="submit" class="btn btn-submit btn-block">SUBMIT</button>
+                    </div>
+                </div>
+            </form>
         </div>
+        <footer class="page-footer mt-110">
+            <!-- Copyright -->
+            <div>
+                <div class="row mr-0 ml-0">
+                    <div class="col-md-6 text-center">
+                        <p class="footer-font footer-text-color">Copyright 2018, Desgined by <span class="text-white">Biz in a Web</span></p>
+                    </div>
+                    <div class="col-md-6 py-4 icons-color text-center ">
+                        <a href="#" class="social"><i class="fab fa-twitter ml-3"></i></a>
+                        <a href="#" class="social"><i class="fab fa-facebook-f ml-3"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in ml-3"></i></a>
+                        <a href="#" class="social"><i class="fab fa-vimeo-v ml-3"></i></a>
+                        <a href="#" class="social"><i class="fab fa-behance ml-3"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Copyright -->
+        </footer>
     </section>
     <script src="Bootstrap 4/js/jquery.slim.min.js"></script>
+    <script src="Bootstrap 4/js/main.js"></script>
     <script src="Bootstrap 4/js/poper.min.js"></script>
     <script src="lightbox2-master/dist/js/lightbox.js"></script>
     <script src="Bootstrap 4/js/bootstrap.min.js"></script>
@@ -340,6 +398,7 @@
             $('.owl-carousel').owlCarousel({
                 loop: true,
                 margin: 0,
+                center: true,
                 nav: true,
                 autoplay: true,
                 responsive: {
@@ -347,14 +406,15 @@
                         items: 1
                     },
                     600: {
-                        items: 2
+                        items: 3
                     },
                     1000: {
-                        items: 3
+                        items: 4
                     }
                 }
             })
         });
+
     </script>
 </body>
 </html>
