@@ -40,13 +40,13 @@ html, body {
 
 .nav-setting {
     padding: 0 20px;
-    padding-top: 0px;
+    padding-top: 20px;
 }
 
 .slider-pera-text {
-    font-family: 'Lato-Light',sans-serif;
+    font-family: 'Lato',sans-serif;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 400;
     color: #212121;
 }
 
@@ -163,7 +163,7 @@ html, body {
         position: absolute;
         display: block;
         width: 10%;
-        border: 2px solid #ffffff;
+        border: 1px solid #ffffff;
         border-radius: 4px;
         -webkit-border-radius: 4px;
         -moz-border-radius: 4px;
@@ -404,6 +404,7 @@ html, body {
 }
 
 .more-details {
+    display: block;
     font-family: 'Lato', sans-serif;
     font-size: 19px;
     color: #9e9e9e;
@@ -411,7 +412,7 @@ html, body {
 }
 
 .link-style {
-    display: block;
+    /*display: inline-flex;*/
     text-decoration: none;
     color: #9e9e9e;
 }
@@ -480,19 +481,19 @@ html, body {
 
 .owl-carousel .owl-nav button.owl-next {
     position: absolute;
-    right: 10%;
-    top: 35%;
+    right: 3%;
+    top: 37%;
     outline: none;
 }
 
 .owl-carousel .owl-nav button.owl-prev {
-    left: 10%;
+    left: 3%;
     position: absolute;
-    top: 35%;
+    top: 37%;
     outline: none;
 }
 
-.my-overlay {
+.chah-overlay {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -570,10 +571,147 @@ html, body {
 .arrow-outline {
     outline: none;
 }
+/*==================== 3D Slider Css ===================*/
+.d3-slider-img {
+    width: 500px;
+    height: 320px
+}
+
+.dp-wrap {
+    margin: 0 auto;
+    position: relative;
+    perspective: 2000px;
+    height: 100%;
+    z-index: 444444444;
+}
+
+.dp-slider {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+}
+
+    .dp-slider div {
+        transform-style: preserve-3d;
+    }
+
+.dp_item {
+    display: block;
+    position: absolute;
+    text-align: center;
+    color: #FFF;
+    border-radius: 10px;
+    transition: transform 1.2s;
+}
+
+.dp-img .d3-slider-img {
+    border-right: 5px solid #fff;
+}
+
+#dp-slider .dp_item:first-child {
+    z-index: 10 !important;
+    transform: rotateY(0deg) translateX(0px) !important;
+}
+
+.dp_item[data-position="2"] {
+    z-index: 9;
+    transform: rotateY(0deg) translateX(25%) scale(0.9);
+}
+
+.dp_item[data-position="3"] {
+    z-index: 8;
+    transform: rotateY(0deg) translateX(51%) scale(0.8);
+}
+
 /*================ Media Query ===============*/
+@media screen and (max-width: 1024px) {
+    .land-mt-105 {
+        margin-top: 50px;
+    }
+
+    .d3-slider-img {
+        width: 370px;
+        height: 260px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .mainheading {
         font-size: 35px;
+    }
+
+    .media-mt-105 {
+        margin-top: 105px;
+    }
+
+    .media-mt-20 {
+        margin-top: 20px;
+    }
+
+    .media-pt-50 {
+        padding-top: 50px;
+    }
+
+    .mt-100 {
+        margin-top: 40px;
+    }
+
+    .brand-font {
+        font-size: 32px;
+    }
+
+    .bring-font {
+        font-size: 32px;
+    }
+
+    .service-font {
+        font-size: 20px !important;
+    }
+
+    .color-font {
+        font-size: 20px !important;
+    }
+
+    .fun-font {
+        font-size: 35px;
+    }
+
+    .no-font {
+        font-size: 40px
+    }
+
+    .media-mt-50 {
+        padding-top: 50px;
+    }
+
+    .great-font {
+        font-size: 25px;
+    }
+
+    .inte-font {
+        font-size: 25px;
+    }
+
+    .touch-font {
+        font-size: 30px;
+    }
+
+    .media-mt-40 {
+        margin-top: 40px;
+    }
+
+    .media-mt-30 {
+        margin-top: 30px;
+    }
+
+    .footer-font {
+        font-size: 18px;
+    }
+
+    .d3-slider-img {
+        width: 300px;
+        height: 250px;
     }
 }
 
@@ -582,8 +720,8 @@ html, body {
         font-size: 30px;
     }
 
-    .mainheading {
-        font-size: 30px;
+    .media-mt-105 {
+        margin-top: 0px;
     }
 
     .brand-font {
@@ -594,12 +732,16 @@ html, body {
         font-size: 28px;
     }
 
+    .media-mt-50 {
+        margin-top: 50px;
+    }
+
     .service-font {
-        font-family: 20px !important;
+        font-size: 20px !important;
     }
 
     .color-font {
-        font-family: 20px !important;
+        font-size: 20px !important;
     }
 
     .fun-font {
@@ -608,10 +750,6 @@ html, body {
 
     .no-font {
         font-size: 40px
-    }
-
-    .media-mt-50 {
-        padding-top: 50px;
     }
 
     .great-font {
@@ -632,6 +770,35 @@ html, body {
 
     .media-mt-30 {
         margin-top: 30px;
+    }
+
+    .media-mt-20 {
+        margin-top: 20px;
+    }
+
+    .media-center {
+        text-align: center !important;
+    }
+
+    .media-mt-6 {
+        margin-top: 6px;
+    }
+
+    .media-mt-50 {
+        margin-top: 50px;
+    }
+
+    .media-pt-50 {
+        padding-top: 175px;
+    }
+
+    .media-pt-60 {
+        padding-top: 60px;
+    }
+
+    .d3-slider-img {
+        width: 275px;
+        height: 200px
     }
 }
 
@@ -640,6 +807,10 @@ html, body {
         font-size: 30px;
     }
 
+    .media-mt-105 {
+        margin-top: 0px;
+    }
+
     .brand-font {
         font-size: 28px;
     }
@@ -648,12 +819,16 @@ html, body {
         font-size: 28px;
     }
 
+    .media-mt-50 {
+        margin-top: 50px;
+    }
+
     .service-font {
-        font-family: 20px !important;
+        font-size: 20px !important;
     }
 
     .color-font {
-        font-family: 20px !important;
+        font-size: 20px !important;
     }
 
     .fun-font {
@@ -662,10 +837,6 @@ html, body {
 
     .no-font {
         font-size: 40px
-    }
-
-    .media-mt-50 {
-        padding-top: 50px;
     }
 
     .great-font {
@@ -686,6 +857,35 @@ html, body {
 
     .media-mt-30 {
         margin-top: 30px;
+    }
+
+    .media-mt-20 {
+        margin-top: 20px;
+    }
+
+    .media-center {
+        text-align: center !important;
+    }
+
+    .media-mt-6 {
+        margin-top: 6px;
+    }
+
+    .media-mt-50 {
+        margin-top: 50px;
+    }
+
+    .media-pt-50 {
+        padding-top: 175px;
+    }
+
+    .media-pt-60 {
+        padding-top: 60px;
+    }
+
+    .d3-slider-img {
+        width: 270px;
+        height: 240px
     }
 }
 
@@ -694,6 +894,10 @@ html, body {
         font-size: 30px;
     }
 
+    .media-mt-105 {
+        margin-top: 0px;
+    }
+
     .brand-font {
         font-size: 28px;
     }
@@ -702,12 +906,16 @@ html, body {
         font-size: 28px;
     }
 
+    .media-mt-50 {
+        margin-top: 50px;
+    }
+
     .service-font {
-        font-family: 20px !important;
+        font-size: 20px !important;
     }
 
     .color-font {
-        font-family: 20px !important;
+        font-size: 20px !important;
     }
 
     .fun-font {
@@ -716,10 +924,6 @@ html, body {
 
     .no-font {
         font-size: 40px
-    }
-
-    .media-mt-50 {
-        padding-top: 50px;
     }
 
     .great-font {
@@ -741,9 +945,137 @@ html, body {
     .media-mt-30 {
         margin-top: 30px;
     }
+
+    .media-mt-20 {
+        margin-top: 20px;
+    }
+
+    .media-center {
+        text-align: center !important;
+    }
+
+    .media-mt-6 {
+        margin-top: 6px;
+    }
+
+    .media-mt-50 {
+        margin-top: 50px;
+    }
+
+    .media-pt-50 {
+        padding-top: 175px;
+    }
+
+    .media-pt-60 {
+        padding-top: 60px;
+    }
+
+    .d3-slider-img {
+        width: 240px;
+        height: 235px
+    }
 }
 
 @media screen and (max-width: 360px) {
+    .mainheading {
+        font-size: 30px;
+    }
+
+    .media-mt-105 {
+        margin-top: 0px;
+    }
+
+    .brand-font {
+        font-size: 28px;
+    }
+
+    .bring-font {
+        font-size: 28px;
+    }
+
+    .media-mt-50 {
+        margin-top: 50px;
+    }
+
+    .service-font {
+        font-size: 20px !important;
+    }
+
+    .color-font {
+        font-size: 20px !important;
+    }
+
+    .fun-font {
+        font-size: 35px;
+    }
+
+    .no-font {
+        font-size: 40px
+    }
+
+    .great-font {
+        font-size: 25px;
+    }
+
+    .inte-font {
+        font-size: 25px;
+    }
+
+    .touch-font {
+        font-size: 30px;
+    }
+
+    .media-mt-40 {
+        margin-top: 40px;
+    }
+
+    .media-mt-30 {
+        margin-top: 30px;
+    }
+
+    .media-mt-20 {
+        margin-top: 20px;
+    }
+
+    .media-center {
+        text-align: center !important;
+    }
+
+    .media-mt-6 {
+        margin-top: 6px;
+    }
+
+    .media-mt-50 {
+        margin-top: 50px;
+    }
+
+    .media-pt-50 {
+        padding-top: 175px;
+    }
+
+    .media-pt-60 {
+        padding-top: 60px;
+    }
+
+    .d3-slider-img {
+        width: 240px;
+        height: 240px
+    }
+}
+
+/*==================== Media Query For Land Scape Mode =====================*/
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+    .land-mt-105 {
+        margin-top: 50px;
+    }
+
+    .d3-slider-img {
+        width: 370px;
+        height: 260px;
+    }
+}
+
+@media screen and (max-width: 823px) and (orientation: landscape) {
     .mainheading {
         font-size: 30px;
     }
@@ -756,12 +1088,103 @@ html, body {
         font-size: 28px;
     }
 
+    .media-mt-50 {
+        margin-top: 50px;
+    }
+
     .service-font {
-        font-family: 20px !important;
+        font-size: 20px !important;
     }
 
     .color-font {
-        font-family: 20px !important;
+        font-size: 20px !important;
+    }
+
+    .fun-font {
+        font-size: 40px;
+    }
+
+    .no-font {
+        font-size: 45px
+    }
+
+    .great-font {
+        font-size: 30px;
+    }
+
+    .inte-font {
+        font-size: 30px;
+    }
+
+    .touch-font {
+        font-size: 30px;
+    }
+
+    .media-mt-40 {
+        margin-top: 45px;
+    }
+
+    .media-mt-30 {
+        margin-top: 35px;
+    }
+
+    .media-mt-20 {
+        margin-top: 30px;
+    }
+
+    .mt-99 {
+        margin-top: 5px;
+    }
+
+    .media-mt-6 {
+        margin-top: 6px;
+    }
+
+    .media-mt-50 {
+        margin-top: 55px;
+    }
+
+    .media-pt-50 {
+        padding-top: 50px;
+    }
+
+    .media-pt-60 {
+        padding-top: 65px;
+    }
+
+    .land-mt-105 {
+        margin-top: 90px;
+    }
+
+    .d3-slider-img {
+        width: 300px;
+        height: 240px
+    }
+}
+
+@media screen and (max-width: 740px) and (orientation: landscape) {
+    .mainheading {
+        font-size: 30px;
+    }
+
+    .brand-font {
+        font-size: 28px;
+    }
+
+    .bring-font {
+        font-size: 28px;
+    }
+
+    .media-mt-50 {
+        margin-top: 50px;
+    }
+
+    .service-font {
+        font-size: 20px !important;
+    }
+
+    .color-font {
+        font-size: 20px !important;
     }
 
     .fun-font {
@@ -770,10 +1193,6 @@ html, body {
 
     .no-font {
         font-size: 40px
-    }
-
-    .media-mt-50 {
-        padding-top: 50px;
     }
 
     .great-font {
@@ -794,5 +1213,368 @@ html, body {
 
     .media-mt-30 {
         margin-top: 30px;
+    }
+
+    .media-mt-20 {
+        margin-top: 20px;
+    }
+
+    .media-center {
+        text-align: center !important;
+    }
+
+    .media-mt-6 {
+        margin-top: 6px;
+    }
+
+    .media-mt-50 {
+        margin-top: 50px;
+    }
+
+    .media-pt-50 {
+        padding-top: 180px;
+    }
+
+    .media-pt-60 {
+        padding-top: 60px;
+    }
+
+    .land-mt-105 {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 736px) and (orientation: landscape) {
+    .mainheading {
+        font-size: 30px;
+    }
+
+    .brand-font {
+        font-size: 28px;
+    }
+
+    .bring-font {
+        font-size: 28px;
+    }
+
+    .media-mt-50 {
+        margin-top: 50px;
+    }
+
+    .service-font {
+        font-size: 20px !important;
+    }
+
+    .color-font {
+        font-size: 20px !important;
+    }
+
+    .fun-font {
+        font-size: 35px;
+    }
+
+    .no-font {
+        font-size: 40px
+    }
+
+    .great-font {
+        font-size: 25px;
+    }
+
+    .inte-font {
+        font-size: 25px;
+    }
+
+    .touch-font {
+        font-size: 30px;
+    }
+
+    .media-mt-40 {
+        margin-top: 40px;
+    }
+
+    .media-mt-30 {
+        margin-top: 30px;
+    }
+
+    .media-mt-20 {
+        margin-top: 20px;
+    }
+
+    .media-center {
+        text-align: center !important;
+    }
+
+    .media-mt-6 {
+        margin-top: 6px;
+    }
+
+    .media-mt-50 {
+        margin-top: 50px;
+    }
+
+    .media-pt-50 {
+        padding-top: 280px;
+    }
+
+    .media-pt-60 {
+        padding-top: 160px;
+    }
+
+    .land-mt-105 {
+        margin-top: 0px;
+    }
+
+    .d3-slider-img {
+        width: 390px;
+        height: 240px
+    }
+}
+
+@media screen and (max-width: 731px) and (orientation: landscape) {
+    .mainheading {
+        font-size: 30px;
+    }
+
+    .brand-font {
+        font-size: 28px;
+    }
+
+    .bring-font {
+        font-size: 28px;
+    }
+
+    .media-mt-50 {
+        margin-top: 50px;
+    }
+
+    .service-font {
+        font-size: 20px !important;
+    }
+
+    .color-font {
+        font-size: 20px !important;
+    }
+
+    .fun-font {
+        font-size: 35px;
+    }
+
+    .no-font {
+        font-size: 40px
+    }
+
+    .great-font {
+        font-size: 25px;
+    }
+
+    .inte-font {
+        font-size: 25px;
+    }
+
+    .touch-font {
+        font-size: 30px;
+    }
+
+    .media-mt-40 {
+        margin-top: 40px;
+    }
+
+    .media-mt-30 {
+        margin-top: 30px;
+    }
+
+    .media-mt-20 {
+        margin-top: 20px;
+    }
+
+    .media-center {
+        text-align: center !important;
+    }
+
+    .media-mt-6 {
+        margin-top: 6px;
+    }
+
+    .media-mt-50 {
+        margin-top: 50px;
+    }
+
+    .media-pt-50 {
+        padding-top: 280px;
+    }
+
+    .media-pt-60 {
+        padding-top: 60px;
+    }
+
+    .land-mt-105 {
+        margin-top: 0px;
+    }
+
+    .d3-slider-img {
+        width: 370px;
+        height: 240px
+    }
+}
+
+@media screen and (max-width: 667px) and (orientation: landscape) {
+    .mainheading {
+        font-size: 30px;
+    }
+
+    .brand-font {
+        font-size: 28px;
+    }
+
+    .bring-font {
+        font-size: 28px;
+    }
+
+    .media-mt-50 {
+        margin-top: 50px;
+    }
+
+    .service-font {
+        font-size: 20px !important;
+    }
+
+    .color-font {
+        font-size: 20px !important;
+    }
+
+    .fun-font {
+        font-size: 35px;
+    }
+
+    .no-font {
+        font-size: 40px
+    }
+
+    .great-font {
+        font-size: 25px;
+    }
+
+    .inte-font {
+        font-size: 25px;
+    }
+
+    .touch-font {
+        font-size: 30px;
+    }
+
+    .media-mt-40 {
+        margin-top: 40px;
+    }
+
+    .media-mt-30 {
+        margin-top: 30px;
+    }
+
+    .media-mt-20 {
+        margin-top: 20px;
+    }
+
+    .media-center {
+        text-align: center !important;
+    }
+
+    .media-mt-6 {
+        margin-top: 6px;
+    }
+
+    .media-mt-50 {
+        margin-top: 150px;
+    }
+
+    .media-pt-50 {
+        padding-top: 280px;
+    }
+
+    .media-pt-60 {
+        padding-top: 60px;
+    }
+}
+
+@media screen and (max-width: 640px) and (orientation: landscape) {
+    .mainheading {
+        font-size: 30px;
+    }
+
+    .brand-font {
+        font-size: 28px;
+    }
+
+    .bring-font {
+        font-size: 28px;
+    }
+
+    .media-mt-50 {
+        margin-top: 50px;
+    }
+
+    .service-font {
+        font-size: 20px !important;
+    }
+
+    .color-font {
+        font-size: 20px !important;
+    }
+
+    .fun-font {
+        font-size: 35px;
+    }
+
+    .no-font {
+        font-size: 40px
+    }
+
+    .great-font {
+        font-size: 25px;
+    }
+
+    .inte-font {
+        font-size: 25px;
+    }
+
+    .touch-font {
+        font-size: 30px;
+    }
+
+    .media-mt-40 {
+        margin-top: 40px;
+    }
+
+    .media-mt-30 {
+        margin-top: 30px;
+    }
+
+    .media-mt-20 {
+        margin-top: 20px;
+    }
+
+    .media-center {
+        text-align: center !important;
+    }
+
+    .media-mt-6 {
+        margin-top: 6px;
+    }
+
+    .media-mt-50 {
+        margin-top: 50px;
+    }
+
+    .media-pt-50 {
+        padding-top: 270px;
+    }
+
+    .media-pt-60 {
+        padding-top: 60px;
+    }
+
+    .d3-slider-img {
+        width: 370px;
+        height: 240px
     }
 }
