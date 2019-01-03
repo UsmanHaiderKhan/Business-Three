@@ -271,27 +271,31 @@
         </div>
         <div class="container">
             <div class="row mt-106 media-mt-40">
-                <div class="col-md-8 offset-md-3 mb-2">
-                    <!--<img src="Images/Shape copy.png" class="w-100" />-->
+                <div class="col-md-8 offset-md-2 mb-2">
+                    <img src="Images/Shape copy.png" class="w-100" />
+                    <div class="mb-5"></div>
                     <div>
-                        <img src="Images/portfolio/slider-11.png" class="hello img-fluid" id="img-1" />
+                        <div class="text-center mt-75-per">
+                            <img src="Images/portfolio/s1.png" class="hello img-fluid img-media" id="img-1" />
+                        </div>
+                        <div class="text-center">
+                            <img src="Images/portfolio/s2.png" class="hello d-none img-fluid img-media" id="img-2" />
+                        </div>
+                        <div class="text-center">
+                            <img src="Images/portfolio/s3.png" class="d-none hello img-fluid img-media" id="img-3" />
+                        </div>
+                        <div class="text-center">
+                            <img src="Images/portfolio/s4.png" class="d-none hello img-fluid img-media" id="img-4" />
+                        </div>
+                        <div class="text-center">
+                            <img src="Images/portfolio/s5.png" class="d-none hello img-fluid img-media" id="img-5" />
+                        </div>
                     </div>
-                    <div>
-                        <img src="Images/portfolio/slider-12.png" class="hello d-none img-fluid" id="img-2" />
-                    </div>
-                    <div>
-                        <img src="Images/portfolio/slider-13.png" class="d-none hello" id="img-3" />
-                    </div>
-                    <div>
-                        <img src="Images/portfolio/slider-14.png" class="d-none hello" id="img-4" />
-                    </div>
-                    <div>
-                        <img src="Images/portfolio/slider-15.png" class="d-none hello" id="img-5" />
-                    </div>
+                    <div class="mt-30"></div>
                 </div>
             </div>
         </div>
-        <div class="owl-carousel position-relative">
+        <div class="owl-carousel position-relative mt-40">
             <div class="item" onclick="change_banner(1)">
                 <img src="Images/portfolio/slider-11.png" class="position-relative" onclick="change_overlay(1)" />
                 <div id="overlay-1" class="chah-overlay yes-sir"></div>
@@ -416,6 +420,7 @@
                 loop: true,
                 margin: 0,
                 center: true,
+                autoplay: true,
                 nav: true,
 
                 responsive: {
