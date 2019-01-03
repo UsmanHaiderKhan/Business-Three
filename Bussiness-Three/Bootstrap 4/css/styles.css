@@ -319,6 +319,10 @@ html, body {
     margin-bottom: 160px;
 }
 
+.ml-23 {
+    margin-left: 23px;
+}
+
 .pt-120 {
     padding-top: 120px;
 }
@@ -326,6 +330,13 @@ html, body {
 .pt-100 {
     padding-top: 100px;
 }
+
+.mt-75-per {
+    margin-top: -75.5%;
+}
+/*width: 685px;
+height: 435px;
+margin-left: 23px;*/
 /*=================== BRAND Section Styling =================*/
 
 .bring-font {
@@ -603,6 +614,13 @@ html, body {
     color: #FFF;
     border-radius: 10px;
     transition: transform 1.2s;
+}
+
+.laptop-banner {
+    background-image: url('../../Images/Shape copy.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .dp-img .d3-slider-img {
@@ -979,6 +997,15 @@ html, body {
 @media screen and (max-width: 360px) {
     .mainheading {
         font-size: 30px;
+    }
+
+    .img-media {
+        width: 290px;
+        height: auto;
+    }
+
+    .mt-75-per {
+        margin-top: -83%;
     }
 
     .media-mt-105 {
