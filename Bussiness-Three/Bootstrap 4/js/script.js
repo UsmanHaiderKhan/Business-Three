@@ -73,8 +73,8 @@ $(function () {
 });
 $(function () {
     var showChar = 180;
-    var moretext = "more details";
-    var lesstext = " less details";
+    var moretext = "more details &nbsp;&nbsp; &#x2192;";
+    var lesstext = " less details &nbsp;&nbsp; ";
     $('.comments-spaces').each(function () {
         var content = $(this).html();
         if (content.length > showChar) {
@@ -82,7 +82,7 @@ $(function () {
             var hide_content = content.substr(showChar, content.length - showChar);
             var html = show_content + '<span class="remaining-content"><span>' + hide_content +
                 '</span><a href="" class="morelink more-details arrow-outline link-style mt-20">' + moretext + '</a>'
-                + '</span> ' + '<span>&#x2192;</span>';
+                + '</span> ' + '<span></span>';
             $(this).html(html);
         }
     });
