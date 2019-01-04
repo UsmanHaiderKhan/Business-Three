@@ -593,7 +593,7 @@ margin-left: 23px;*/
     position: relative;
     perspective: 2000px;
     height: 100%;
-    z-index: 444444444;
+    z-index: 1;
 }
 
 .dp-slider {
@@ -648,15 +648,121 @@ margin-left: 23px;*/
         margin-top: 50px;
     }
 
+    .img-media {
+        width: 538px;
+        height: auto;
+    }
+
+    .mt-75-per {
+        margin-top: -76%;
+    }
+
     .d3-slider-img {
         width: 370px;
         height: 260px;
     }
 }
 
+@media screen and (max-width:800px) {
+    .mainheading {
+        font-size: 35px;
+    }
+
+    .img-media {
+        width: 380px;
+        height: auto;
+    }
+
+    .mt-75-per {
+        margin-top: -78%;
+    }
+
+    .media-mt-105 {
+        margin-top: 105px;
+    }
+
+    .media-mt-20 {
+        margin-top: 20px;
+    }
+
+    .media-pt-50 {
+        padding-top: 50px;
+    }
+
+    .mt-100 {
+        margin-top: 19px;
+    }
+
+    .brand-font {
+        font-size: 32px;
+    }
+
+    .bring-font {
+        font-size: 32px;
+    }
+
+    .service-font {
+        font-size: 20px !important;
+    }
+
+    .color-font {
+        font-size: 20px !important;
+    }
+
+    .fun-font {
+        font-size: 35px;
+    }
+
+    .no-font {
+        font-size: 40px
+    }
+
+    .media-mt-50 {
+        padding-top: 50px;
+    }
+
+    .great-font {
+        font-size: 25px;
+    }
+
+    .inte-font {
+        font-size: 25px;
+    }
+
+    .touch-font {
+        font-size: 30px;
+    }
+
+    .media-mt-40 {
+        margin-top: 40px;
+    }
+
+    .media-mt-30 {
+        margin-top: 30px;
+    }
+
+    .footer-font {
+        font-size: 18px;
+    }
+
+    .d3-slider-img {
+        width: 300px;
+        height: 250px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .mainheading {
         font-size: 35px;
+    }
+
+    .img-media {
+        width: 380px;
+        height: auto;
+    }
+
+    .mt-75-per {
+        margin-top: -78%;
     }
 
     .media-mt-105 {
@@ -736,6 +842,15 @@ margin-left: 23px;*/
 @media screen and (max-width: 414px) {
     .mainheading {
         font-size: 30px;
+    }
+
+    .img-media {
+        width: 330px;
+        height: auto;
+    }
+
+    .mt-75-per {
+        margin-top: -80%;
     }
 
     .media-mt-105 {
@@ -825,6 +940,15 @@ margin-left: 23px;*/
         font-size: 30px;
     }
 
+    .img-media {
+        width: 328px;
+        height: auto;
+    }
+
+    .mt-75-per {
+        margin-top: -80%;
+    }
+
     .media-mt-105 {
         margin-top: 0px;
     }
@@ -910,6 +1034,15 @@ margin-left: 23px;*/
 @media screen and (max-width: 375px) {
     .mainheading {
         font-size: 30px;
+    }
+
+    .img-media {
+        width: 300px;
+        height: auto;
+    }
+
+    .mt-75-per {
+        margin-top: -82%;
     }
 
     .media-mt-105 {
@@ -1107,6 +1240,15 @@ margin-left: 23px;*/
         font-size: 30px;
     }
 
+    .img-media {
+        width: 395px;
+        height: auto;
+    }
+
+    .mt-75-per {
+        margin-top: -79%;
+    }
+
     .brand-font {
         font-size: 28px;
     }
@@ -1194,6 +1336,15 @@ margin-left: 23px;*/
         font-size: 30px;
     }
 
+    .img-media {
+        width: 454px;
+        height: auto;
+    }
+
+    .mt-75-per {
+        margin-top: -78%;
+    }
+
     .brand-font {
         font-size: 28px;
     }
@@ -1274,6 +1425,15 @@ margin-left: 23px;*/
 @media screen and (max-width: 736px) and (orientation: landscape) {
     .mainheading {
         font-size: 30px;
+    }
+
+    .img-media {
+        width: 454px;
+        height: auto;
+    }
+
+    .mt-75-per {
+        margin-top: -78%;
     }
 
     .brand-font {
@@ -1363,6 +1523,15 @@ margin-left: 23px;*/
         font-size: 30px;
     }
 
+    .img-media {
+        width: 454px;
+        height: auto;
+    }
+
+    .mt-75-per {
+        margin-top: -78%;
+    }
+
     .brand-font {
         font-size: 28px;
     }
@@ -1450,6 +1619,15 @@ margin-left: 23px;*/
         font-size: 30px;
     }
 
+    .img-media {
+        width: 465px;
+        height: auto;
+    }
+
+    .mt-75-per {
+        margin-top: -78.5%;
+    }
+
     .brand-font {
         font-size: 28px;
     }
@@ -1530,6 +1708,15 @@ margin-left: 23px;*/
 
     .brand-font {
         font-size: 28px;
+    }
+
+    .img-media {
+        width: 465px;
+        height: auto;
+    }
+
+    .mt-75-per {
+        margin-top: -78.5%;
     }
 
     .bring-font {
