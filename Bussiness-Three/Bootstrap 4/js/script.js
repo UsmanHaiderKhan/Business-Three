@@ -74,7 +74,7 @@ $(function () {
 $(function () {
     var showChar = 180;
     var moretext = "more details &nbsp;&nbsp; &#x2192;";
-    var lesstext = " less details &nbsp;&nbsp; ";
+    var lesstext = " less details &nbsp;&nbsp; &#x2190;";
     $('.comments-spaces').each(function () {
         var content = $(this).html();
         if (content.length > showChar) {
