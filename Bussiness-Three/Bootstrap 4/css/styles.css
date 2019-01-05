@@ -584,14 +584,14 @@ margin-left: 23px;*/
 }
 /*==================== 3D Slider Css ===================*/
 .d3-slider-img {
-    width: 500px;
+    width: 486px;
     height: 320px
 }
 
 .dp-wrap {
     margin: 0 auto;
     position: relative;
-    perspective: 2000px;
+    perspective: 1000px;
     height: 100%;
     z-index: 1;
 }
