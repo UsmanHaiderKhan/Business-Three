@@ -50,7 +50,7 @@ $(function () {
         if (content.length > showChar) {
             var show_content = content.substr(0, showChar);
             var hide_content = content.substr(showChar, content.length - showChar);
-            var html = show_content + '<span class="remaining-content" style="display:block;margin-top:20px"><span>' + hide_content +
+            var html = show_content + '<span class="remaining-contents" style="display:block;margin-top:20px"><span>' + hide_content +
                 '</span><a href="" class="morelinks read-more mt-30 arrow-outline" style="display:block">' + moretext + '</a>'
                 + '</span>';
             $(this).html(html);
@@ -80,7 +80,7 @@ $(function () {
         if (content.length > showChar) {
             var show_content = content.substr(0, showChar);
             var hide_content = content.substr(showChar, content.length - showChar);
-            var html = show_content + '<span class="remaining-content"><span>' + hide_content +
+            var html = show_content + '<span class="remaining-content service-desc"><span>' + hide_content +
                 '</span><a href="" class="morelink more-details arrow-outline link-style mt-20">' + moretext + '</a>'
                 + '</span> ' + '<span></span>';
             $(this).html(html);
@@ -218,4 +218,17 @@ jQuery(document).ready(function () {
 
         detect_active();
     });
+});
+/*============= Applying the class on scrolling ==============*/
+$(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+
+    //>=, not <=
+    if (scroll >= 50) {
+        //clearHeader, not clearheader - caps H
+        $("nav").removeClass("pt-45");
+    }
+    if (scroll == 0) {
+        $("nav").addClass("pt-45 ");
+    }
 });
