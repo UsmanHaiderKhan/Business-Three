@@ -681,6 +681,11 @@ margin-left: 23px;*/
     background-repeat: no-repeat;
 }
 
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+    font-size: 50px;
+    margin-left: 0;
+}
+
 .dp-img .d3-slider-img {
     border-right: 5px solid #fff;
 }
